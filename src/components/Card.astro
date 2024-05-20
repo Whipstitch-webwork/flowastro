@@ -2,28 +2,33 @@
 interface Props {
 	title: string;
 	body: string;
-	href: string;
+
 }
 
-const { href, title, body } = Astro.props;
+const { title, body } = Astro.props;
 ---
 
-<li class="link-card">
-	<a href={href}>
-		<h2>
+<div class="link-card">
+	
+		<h2 class="text-gradient">
 			{title}
 			<span>&rarr;</span>
 		</h2>
 		<p>
 			{body}
 		</p>
-	</a>
-</li>
+	
+	</div>
+
+	
 <style>
 	.link-card {
 		list-style: none;
-		display: flex;
-		padding: 1px;
+		display: grid;
+		flex-direction: column;
+		padding:20px;
+		width: 225px;
+		height: 275px;
 		background-color: #23262d;
 		background-image: none;
 		background-size: 400%;
@@ -31,7 +36,10 @@ const { href, title, body } = Astro.props;
 		background-position: 100%;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1);
+		margin:-100px 0 0;
 	}
+	
+
 	.link-card > a {
 		width: 100%;
 		text-decoration: none;
@@ -39,23 +47,39 @@ const { href, title, body } = Astro.props;
 		padding: calc(1.5rem - 1px);
 		border-radius: 8px;
 		color: white;
-		background-color: #23262d;
+		background-color: #29334e;
 		opacity: 0.8;
+	}
+	.text-gradient {
+		background-image: linear-gradient(180deg, #fafdfff8, #0b68aade);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
 	}
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;
+		font-weight: 700;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+		color: white;
+	}
+	span{
+		margin-left: 15px;
 	}
 	p {
 		margin-top: 0.5rem;
 		margin-bottom: 0;
+		color: white;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;
-		background-image: var(--accent-gradient);
+		/* background-image: var(--accent-gradient); */
+		background:radial-gradient(90% 95% at -40% 15%, #3c8cc2cc, #73737300),  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.20' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
 	}
 </style>
+
+

@@ -1,123 +1,481 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import SubHeading from '../components/SubHeading.astro';
+
 ---
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<svg
-			class="astro-a"
-			width="495"
-			height="623"
-			viewBox="0 0 495 623"
-			fill="none"
-			xmlns="http://www.w3.org/2000/svg"
-			aria-hidden="true"
-		>
-			<path
-				fill-rule="evenodd"
-				clip-rule="evenodd"
-				d="M167.19 364.254C83.4786 364.254 0 404.819 0 404.819C0 404.819 141.781 19.4876 142.087 18.7291C146.434 7.33701 153.027 0 162.289 0H332.441C341.703 0 348.574 7.33701 352.643 18.7291C352.92 19.5022 494.716 404.819 494.716 404.819C494.716 404.819 426.67 364.254 327.525 364.254L264.41 169.408C262.047 159.985 255.147 153.581 247.358 153.581C239.569 153.581 232.669 159.985 230.306 169.408L167.19 364.254ZM160.869 530.172C160.877 530.18 160.885 530.187 160.894 530.195L160.867 530.181C160.868 530.178 160.868 530.175 160.869 530.172ZM136.218 411.348C124.476 450.467 132.698 504.458 160.869 530.172C160.997 529.696 161.125 529.242 161.248 528.804C161.502 527.907 161.737 527.073 161.917 526.233C165.446 509.895 178.754 499.52 195.577 500.01C211.969 500.487 220.67 508.765 223.202 527.254C224.141 534.12 224.23 541.131 224.319 548.105C224.328 548.834 224.337 549.563 224.347 550.291C224.563 566.098 228.657 580.707 237.264 593.914C245.413 606.426 256.108 615.943 270.749 622.478C270.593 621.952 270.463 621.508 270.35 621.126C270.045 620.086 269.872 619.499 269.685 618.911C258.909 585.935 266.668 563.266 295.344 543.933C298.254 541.971 301.187 540.041 304.12 538.112C310.591 533.854 317.059 529.599 323.279 525.007C345.88 508.329 360.09 486.327 363.431 457.844C364.805 446.148 363.781 434.657 359.848 423.275C358.176 424.287 356.587 425.295 355.042 426.275C351.744 428.366 348.647 430.33 345.382 431.934C303.466 452.507 259.152 455.053 214.03 448.245C184.802 443.834 156.584 436.019 136.218 411.348Z"
-				fill="url(#paint0_linear_1805_24383)"></path>
-			<defs>
-				<linearGradient
-					id="paint0_linear_1805_24383"
-					x1="247.358"
-					y1="0"
-					x2="247.358"
-					y2="622.479"
-					gradientUnits="userSpaceOnUse"
-				>
-					<stop stop-opacity="0.9"></stop>
-					<stop offset="1" stop-opacity="0.2"></stop>
-				</linearGradient>
-			</defs>
+		
+		<div class="hero">
+			<h1><span class="text-gradient">Whipstitch </span>webwork</h1>
+			<div class="heroCopy">
+				<h2>Blazingly Fast & Effective Websites</h2>
+				<p>We specialize in building highly performant websites that are tailored for the unique needs of each business.</p>
+				<button aria-label="We are available" type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">We are available</button>
+			</div>	
+		</div>
+		<svg class="arrows">
+			<path class="a1" d="M0 0 L30 32 L60 0"></path>
+			<path class="a2" d="M0 20 L30 52 L60 20"></path>
+			<path class="a3" d="M0 40 L30 72 L60 40"></path>
+			
 		</svg>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+			
 	</main>
+	<section class="sect2">
+		<div class="sect2animated-cards">
+			<Card title="Performance" body="Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card..."/>
+			<Card title="SEO" body="Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card..."/>
+			<Card title="Security" body="Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card..."/>
+			<Card title="Accessibility" body="Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card...Some meaningfull words about this card..."/>
+		</div>
+	
+		<div class="sect2performance">
+			<div class="left">
+				<ol>
+					<SubHeading title="Website" subtitle="Performance"/>
+					<li>
+					  <h3>- Better Ranking</h3>
+					  <p>Fast page load speed is a crucial ranking factor for search engines.</p>
+					</li>
+					<li>
+					  <h3>- Better User Experience</h3>
+					  <p>Optimizing speed ensures an impressive user experience, reducing bounce rates.</p>
+					</li>
+					<li>
+					  <h3>- Better Sales Conversions</h3>
+					  <p>Speed significantly impacts sales conversion rates; faster sites lead to better conversions.</p>
+					</li>
+					
+				  </ol>
+				
+				<!-- <h2>Google has declared site performance as the primary metric used to rank websites.</h3> -->
+				<!-- <ol>
+					<li>
+						<h3>Google uses page load speed as a primary ranking factor</h3>
+						<p>Google made it very clear that they operate by speed-obsession for every product on the web.</p>
+					</li>
+					<li>
+						<h3>High speed ensures an impressive user experience</h3>
+						<p>Kissmetrics also reveals that 40% of people abandon a site completely if it takes more than three seconds to load. </p>
+					</li>
+					<li>
+						<h3>Speed dramatically affects conversions</h3>
+						<p>This is true especially for e-commerce websites, A one-second delay leads to a 7% reduction in conversion. </p>
+					</li>
+				</ol> -->
+				
+			</div>
+			
+			<div class="right">	
+				<div class="device relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[454px] max-w-[341px] md:h-[682px] md:max-w-[512px]">
+					<div class="h-[32px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[72px] rounded-s-lg"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+					<div class="h-[64px] w-[3px] bg-gray-800 dark:bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+					<div class="rounded-[2rem] overflow-hidden h-[426px] md:h-[654px] bg-white dark:bg-gray-800">
+						<img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image.png" class="dark:hidden h-[426px] md:h-[654px]" alt="">
+						<img src="https://flowbite.s3.amazonaws.com/docs/device-mockups/tablet-mockup-image-dark.png" class="hidden dark:block h-[426px] md:h-[654px]" alt="">
+					</div>
+				</div>
+				 <!-- <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+					<div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+					<div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+					<div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+						<img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" class="dark:hidden  w-[272px] h-[572px]" alt="">
+						<img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+					</div>
+				</div>  -->
+				
+			</div>
+		</div>
+	</section>
+
+	<section class="sect3">
+		<div class="sect3performance">
+			<div class="left">					
+				 <div class="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[14px] rounded-[2.5rem] h-[600px] w-[300px] shadow-xl">
+					<div class="w-[148px] h-[18px] bg-gray-800 top-0 rounded-b-[1rem] left-1/2 -translate-x-1/2 absolute"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[124px] rounded-s-lg"></div>
+					<div class="h-[46px] w-[3px] bg-gray-800 absolute -start-[17px] top-[178px] rounded-s-lg"></div>
+					<div class="h-[64px] w-[3px] bg-gray-800 absolute -end-[17px] top-[142px] rounded-e-lg"></div>
+					<div class="rounded-[2rem] overflow-hidden w-[272px] h-[572px] bg-white dark:bg-gray-800">
+						<img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-light.png" class="dark:hidden  w-[272px] h-[572px]" alt="">
+						<img src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/hero/mockup-2-dark.png" class="hidden dark:block w-[272px] h-[572px]" alt="">
+					</div>
+				</div> 
+			</div>
+
+			<div class="right">
+				<ol>
+					<SubHeading title="Website" subtitle="Performance"/>
+					<li>
+					  <h3>- Better Ranking</h3>
+					  <p>Fast page load speed is a crucial ranking factor for search engines.</p>
+					</li>
+					<li>
+					  <h3>- Better User Experience</h3>
+					  <p>Optimizing speed ensures an impressive user experience, reducing bounce rates.</p>
+					</li>
+					<li>
+					  <h3>- Better Sales Conversions</h3>
+					  <p>Speed significantly impacts sales conversion rates; faster sites lead to better conversions.</p>
+					</li>
+					
+				  </ol>
+
+			
+			</div>
+			
+			
+		</div>
+
+	</section>
+	<section class="sect4">
+		<div class="bgleft">
+			
+		</div>
+		<div class="bgright">
+			
+		</div>
+	</section>
+	
+
+		
+
+	
+	
+
+
+	
+		
+		
+		
+	
 </Layout>
 
 <style>
+	/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ HeroSection */
 	main {
+		width: 100vw;
+		height: 100vh;
+		background-color: #000000;
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
 		color: white;
 		font-size: 20px;
 		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
+		background-attachment: fixed;
+		background-size: cover;
+		background: radial-gradient(90% 95% at -40% 15%, #3c8cc2cc, #73737300),  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.20' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+	
+		 /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23333333' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%232A3058'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+		/* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.07' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E"); */	
+	} 	
+	.hero{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5rem;
 	}
 	h1 {
-		font-size: 4rem;
+		
+		font-size: clamp(2rem, -1.5rem + 8vw, 6rem);
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
+		margin: 2rem auto 5rem;
+		
+	}
+	.heroCopy{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0;
+		/* background: rgba(42, 53, 61, 0.5); */
+		background: rgb(20,20,20);
+		border-radius: 8px;
+	}
+	h2 {
+		font-size: clamp(1.15rem, -1.5rem + 8vw, 3rem);
+		/* font-size: 3rem; */
+		font-weight: 700;
+		font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+		margin-bottom: 15px;
+		
+	}
+	p{
+		width:80%;
+		margin-bottom: 50px;
+		font-size: clamp(.85rem, -1.5rem + 8vw, 1.25rem);
 	}
 	.text-gradient {
-		background-image: var(--accent-gradient);
+		background-image: linear-gradient(180deg, #fafdfff8, #0b68aade);
+
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		background-size: 400%;
 		background-position: 0%;
+		font-weight: 900;
 	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
+	.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 75px;
 	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
+	.arrows path {
+	stroke: #2994D1;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 1.25s infinite; 
 	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
+	@keyframes arrow
+	{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
 	}
-	.link-card-grid {
+	@-webkit-keyframes arrow /*Safari and Chrome*/
+	{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+	}
+	.arrows path.a1 {
+		animation-delay:-1s;
+		-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+	}
+	.arrows path.a2 {
+		animation-delay:-.5s;
+		-webkit-animation-delay:-.5s; /* Safari 和 Chrome */
+	}
+	.arrows path.a3 {	
+		animation-delay:0s;
+		-webkit-animation-delay:0s; /* Safari 和 Chrome */
+	}
+
+
+    /*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Section2*/
+
+	.sect2{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		height: 125vh;
+		padding: 5rem;
+	
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.07' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+		background-attachment: fixed;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.20' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+		background-size: cover;
+		/* background: radial-gradient(90% 95% at -40% 15%, #3c8cc2cc, #73737300),  url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.20' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");; */
+		
+	}
+	.sect2animated-cards{
+		width: 100%;
+		height: auto;
+		display: flex;
+		justify-content: space-around;
+		opacity: 0;
+  		transform: translateY(100px);
+  		transition: opacity 1s ease, transform 1s ease;
+	}
+	.sect2animated-cards.visible {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	.sect2performance{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width:80%;
+		/* height: 600px; */
+		margin-top: 15rem;	
+	}
+	.sect2performance .left{
+		display: flex;
+		flex-direction: column;
+		justify-content:flex-start;
+		align-items:center;
+		width: 50%;
+		background: radial-gradient(90% 95% at -40% 15%,  #3c8cc2cc, #73737300), black;
+		background-size: cover;
+		border-radius: 10px;
+		/* margin-top: 50px; */
+		
+	}
+	.sect2performance h2{
+		color: white;
+		font-size: clamp(1.35rem, -1.5rem + 8vw, 1.45rem);
+	}
+	 ol{
+		margin-top: 200px;
+		display: flex;
+		flex-direction: column;
+	}
+	.sect2performance h3{
+		font-family: "Kanit", sans-serif;
+  		font-weight: 500;
+  		font-style: normal;
+		font-size: clamp(1rem, -1.5rem + 8vw, 1.15rem);
+		color: white;
+		margin-bottom: 10px;
+	}
+	.sect2performance p{
+		font-size: clamp(.85rem, -1.5rem + 8vw, 1rem);
+		color: white;
+	}	
+	.sect2performance .right{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		width:50%;
+		
+		
+		
+	}
+	
+	
+	/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Section3 */
+	.sect3{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100vw;
+		height: 125vh;
+		padding: 5rem;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.07' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+		background-attachment: fixed;
+		background-size: cover;
+		
+	
+	}
+	.sect3performance{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		height: 100%;
+		height: 600px;
+		margin-top: 10rem;
+		
+	}
+	.sect3performance .right{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		width: 50%;
+		
+	}
+	.sect3performance h3{
+		color: white;
+		font-size: clamp(1rem, -1.5rem + 8vw, 1.25rem);
+		width:80%;
+		
+	}
+	
+	.sect3performance .left{
+		display: flex;
+		flex-direction: column;
+		margin-right: 200px;
+		justify-content: flex-start;
+		align-items: center;
+		width: 50%;
+		
+	}
+	.sect2performance h3{
+		font-family: "Kanit", sans-serif;
+  		font-weight: 500;
+  		font-style: normal;
+		font-size: clamp(1rem, -1.5rem + 8vw, 1.15rem);
+		color: white;
+		margin-bottom: 10px;
+	}
+	.sect3performance p{
+		font-size: clamp(.85rem, -1.5rem + 8vw, 1rem);
+		color: white;
+	}	
+	.sect3performance .right{
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		width:50%;
+		
+		
+		
+	}
+
+
+
+	/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Section4 */
+	.sect4{
 		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+		grid-template-columns: 1fr 1fr;
+		width: 100vw;
+		height: 100vh;
+		
 	}
+	.bgleft{
+		width: 100%;
+		height: 100vh;
+		background: radial-gradient(90% 95% at -40% 15%, #3c8cc2cc, #73737300), black;
+	}
+	.bgright{
+		width: 100%;
+		height: 100vh;
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='100%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23000000'/%3E%3Cstop offset='1' stop-color='%23000101'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='82.1%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%230B68AA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%230B68AA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%230BB6FF' stroke-width='1' stroke-miterlimit='10' stroke-opacity='0.07'%3E%3Crect x='12.5' y='12.5' width='975' height='975'/%3E%3Crect x='25' y='25' width='950' height='950'/%3E%3Crect x='37.5' y='37.5' width='925' height='925'/%3E%3Crect x='50' y='50' width='900' height='900'/%3E%3Crect x='62.5' y='62.5' width='875' height='875'/%3E%3Crect x='75' y='75' width='850' height='850'/%3E%3Crect x='87.5' y='87.5' width='825' height='825'/%3E%3Crect x='100' y='100' width='800' height='800'/%3E%3Crect x='112.5' y='112.5' width='775' height='775'/%3E%3Crect x='125' y='125' width='750' height='750'/%3E%3Crect x='137.5' y='137.5' width='725' height='725'/%3E%3Crect x='150' y='150' width='700' height='700'/%3E%3Crect x='162.5' y='162.5' width='675' height='675'/%3E%3Crect x='175' y='175' width='650' height='650'/%3E%3Crect x='187.5' y='187.5' width='625' height='625'/%3E%3Crect x='200' y='200' width='600' height='600'/%3E%3Crect x='212.5' y='212.5' width='575' height='575'/%3E%3Crect x='225' y='225' width='550' height='550'/%3E%3Crect x='237.5' y='237.5' width='525' height='525'/%3E%3Crect x='250' y='250' width='500' height='500'/%3E%3Crect x='262.5' y='262.5' width='475' height='475'/%3E%3Crect x='275' y='275' width='450' height='450'/%3E%3Crect x='287.5' y='287.5' width='425' height='425'/%3E%3Crect x='300' y='300' width='400' height='400'/%3E%3Crect x='312.5' y='312.5' width='375' height='375'/%3E%3Crect x='325' y='325' width='350' height='350'/%3E%3Crect x='337.5' y='337.5' width='325' height='325'/%3E%3Crect x='350' y='350' width='300' height='300'/%3E%3Crect x='362.5' y='362.5' width='275' height='275'/%3E%3Crect x='375' y='375' width='250' height='250'/%3E%3Crect x='387.5' y='387.5' width='225' height='225'/%3E%3Crect x='400' y='400' width='200' height='200'/%3E%3Crect x='412.5' y='412.5' width='175' height='175'/%3E%3Crect x='425' y='425' width='150' height='150'/%3E%3Crect x='437.5' y='437.5' width='125' height='125'/%3E%3Crect x='450' y='450' width='100' height='100'/%3E%3Crect x='462.5' y='462.5' width='75' height='75'/%3E%3Crect x='475' y='475' width='50' height='50'/%3E%3Crect x='487.5' y='487.5' width='25' height='25'/%3E%3C/g%3E%3Crect fill-opacity='0.20' fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+	}
+	
+	/* https://stackblitz.com/_astro/ds-hero-deco-1.-WvtQVxO_1Quoi9.svg */
 </style>
+
+
+
+
+<script>
+	
+// First we select the element we want to target
+const target = document.querySelector('.sect2animated-cards');
+
+// Next we want to create a function that will be called when that element is intersected
+function handleIntersection(entries) {
+  // The callback will return an array of entries, even if you are only observing a single item
+  entries.map((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible')
+    } else {
+      entry.target.classList.remove('visible')
+    }
+  });
+}
+
+// Next we instantiate the observer with the function we created above. This takes an optional configuration
+// object that we will use in the other examples.
+const observer = new IntersectionObserver(handleIntersection);
+
+// Finally start observing the target element
+observer.observe(target);
+
+
+
+</script>

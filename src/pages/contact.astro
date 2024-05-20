@@ -1,0 +1,82 @@
+---
+import Layout from"../layouts/Layout.astro"
+---
+<Layout title="Welcome to Astro.">
+	<main>
+		<div class="hero">
+			<h1><span class="text-gradient">Contact </span>Us</h1>
+			<div class="heroCopy">
+				<h2>Blazingly Fast & Effective Websites</h2>
+				<p>We specialize in building highly performant websites that are tailored for the unique needs of each business.</p>
+				<button aria-label="We are available" type="button" class="text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">We are available</button>
+			</div>	
+		</div>
+			
+	</main>
+	
+</Layout>
+
+
+
+<style>
+main {
+		width: 100vw;
+		
+		
+		height: 100vh;
+		background-color: #000000;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23333333' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%232A3058'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+		margin: auto;
+		padding: 1rem;
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+
+	.hero{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5rem;
+	}
+	
+	h1 {
+		font-size: clamp(2rem, -1.5rem + 8vw, 6rem);
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin: 2rem auto 5rem;
+		
+	}
+	.heroCopy{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 0;
+		/* background: rgba(42, 53, 61, 0.5); */
+		background: rgb(20,20,20);
+		border-radius: 8px;
+	}
+	h2 {
+		font-size: clamp(1.15rem, -1.5rem + 8vw, 3rem);
+		/* font-size: 3rem; */
+		font-weight: 700;
+		margin-bottom: 15px;
+		
+	}
+	p{
+		width:80%;
+		margin-bottom: 50px;
+		font-size: clamp(.85rem, -1.5rem + 8vw, 1.25rem);
+	}
+	.text-gradient {
+		background-image: linear-gradient(180deg, #fafdfff8, #0b68aade);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+		font-weight: 900;
+	}
+</style>
